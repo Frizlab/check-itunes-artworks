@@ -1,0 +1,237 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B4453E7152DB93D00AD48A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4453E6152DB93D00AD48A7 /* Foundation.framework */; };
+		7B4453EA152DB93E00AD48A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4453E9152DB93E00AD48A7 /* main.m */; };
+		7B4453EE152DB93E00AD48A7 /* check_itunes_artworks.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B4453ED152DB93E00AD48A7 /* check_itunes_artworks.1 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7B4453E0152DB93D00AD48A7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				7B4453EE152DB93E00AD48A7 /* check_itunes_artworks.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7B4453E2152DB93D00AD48A7 /* check_itunes_artworks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = check_itunes_artworks; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4453E6152DB93D00AD48A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7B4453E9152DB93E00AD48A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7B4453EC152DB93E00AD48A7 /* check_itunes_artworks-Prefix.pch */ = {isa = PBXFileReference; path = "check_itunes_artworks-Prefix.pch"; sourceTree = "<group>"; };
+		7B4453ED152DB93E00AD48A7 /* check_itunes_artworks.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = check_itunes_artworks.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7B4453DF152DB93D00AD48A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4453E7152DB93D00AD48A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B4453D7152DB93D00AD48A7 = {
+			isa = PBXGroup;
+			children = (
+				7B4453E8152DB93E00AD48A7 /* check_itunes_artworks */,
+				7B4453E5152DB93D00AD48A7 /* Frameworks */,
+				7B4453E3152DB93D00AD48A7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B4453E3152DB93D00AD48A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B4453E2152DB93D00AD48A7 /* check_itunes_artworks */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7B4453E5152DB93D00AD48A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B4453E6152DB93D00AD48A7 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B4453E8152DB93E00AD48A7 /* check_itunes_artworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B4453E9152DB93E00AD48A7 /* main.m */,
+				7B4453ED152DB93E00AD48A7 /* check_itunes_artworks.1 */,
+				7B4453EB152DB93E00AD48A7 /* Supporting Files */,
+			);
+			path = check_itunes_artworks;
+			sourceTree = "<group>";
+		};
+		7B4453EB152DB93E00AD48A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7B4453EC152DB93E00AD48A7 /* check_itunes_artworks-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7B4453E1152DB93D00AD48A7 /* check_itunes_artworks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7B4453F1152DB93E00AD48A7 /* Build configuration list for PBXNativeTarget "check_itunes_artworks" */;
+			buildPhases = (
+				7B4453DE152DB93D00AD48A7 /* Sources */,
+				7B4453DF152DB93D00AD48A7 /* Frameworks */,
+				7B4453E0152DB93D00AD48A7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = check_itunes_artworks;
+			productName = check_itunes_artworks;
+			productReference = 7B4453E2152DB93D00AD48A7 /* check_itunes_artworks */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7B4453D9152DB93D00AD48A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Frost Land";
+			};
+			buildConfigurationList = 7B4453DC152DB93D00AD48A7 /* Build configuration list for PBXProject "check_itunes_artworks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7B4453D7152DB93D00AD48A7;
+			productRefGroup = 7B4453E3152DB93D00AD48A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7B4453E1152DB93D00AD48A7 /* check_itunes_artworks */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7B4453DE152DB93D00AD48A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B4453EA152DB93E00AD48A7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7B4453EF152DB93E00AD48A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7B4453F0152DB93E00AD48A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7B4453F2152DB93E00AD48A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "check_itunes_artworks/check_itunes_artworks-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7B4453F3152DB93E00AD48A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "check_itunes_artworks/check_itunes_artworks-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7B4453DC152DB93D00AD48A7 /* Build configuration list for PBXProject "check_itunes_artworks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4453EF152DB93E00AD48A7 /* Debug */,
+				7B4453F0152DB93E00AD48A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7B4453F1152DB93E00AD48A7 /* Build configuration list for PBXNativeTarget "check_itunes_artworks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7B4453F2152DB93E00AD48A7 /* Debug */,
+				7B4453F3152DB93E00AD48A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7B4453D9152DB93D00AD48A7 /* Project object */;
+}
