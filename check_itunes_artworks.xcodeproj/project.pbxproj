@@ -10,6 +10,7 @@
 		7B4453E7152DB93D00AD48A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4453E6152DB93D00AD48A7 /* Foundation.framework */; };
 		7B4453EA152DB93E00AD48A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4453E9152DB93E00AD48A7 /* main.m */; };
 		7B4453EE152DB93E00AD48A7 /* check_itunes_artworks.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B4453ED152DB93E00AD48A7 /* check_itunes_artworks.1 */; };
+		7B4453F8152DBFD400AD48A7 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4453F7152DBFD400AD48A7 /* ScriptingBridge.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,8 +30,10 @@
 		7B4453E2152DB93D00AD48A7 /* check_itunes_artworks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = check_itunes_artworks; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4453E6152DB93D00AD48A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7B4453E9152DB93E00AD48A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7B4453EC152DB93E00AD48A7 /* check_itunes_artworks-Prefix.pch */ = {isa = PBXFileReference; path = "check_itunes_artworks-Prefix.pch"; sourceTree = "<group>"; };
+		7B4453EC152DB93E00AD48A7 /* check_itunes_artworks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "check_itunes_artworks-Prefix.pch"; sourceTree = "<group>"; };
 		7B4453ED152DB93E00AD48A7 /* check_itunes_artworks.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = check_itunes_artworks.1; sourceTree = "<group>"; };
+		7B4453F7152DBFD400AD48A7 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
+		7B4453F9152DC06200AD48A7 /* iTunes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iTunes.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +42,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B4453E7152DB93D00AD48A7 /* Foundation.framework in Frameworks */,
+				7B4453F8152DBFD400AD48A7 /* ScriptingBridge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +69,7 @@
 		7B4453E5152DB93D00AD48A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B4453F7152DBFD400AD48A7 /* ScriptingBridge.framework */,
 				7B4453E6152DB93D00AD48A7 /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -73,6 +78,7 @@
 		7B4453E8152DB93E00AD48A7 /* check_itunes_artworks */ = {
 			isa = PBXGroup;
 			children = (
+				7B4453F9152DC06200AD48A7 /* iTunes.h */,
 				7B4453E9152DB93E00AD48A7 /* main.m */,
 				7B4453ED152DB93E00AD48A7 /* check_itunes_artworks.1 */,
 				7B4453EB152DB93E00AD48A7 /* Supporting Files */,
