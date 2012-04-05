@@ -202,18 +202,24 @@
 		7B4453F2152DB93E00AD48A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "check_itunes_artworks/check_itunes_artworks-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = FL;
 			};
 			name = Debug;
 		};
 		7B4453F3152DB93E00AD48A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "check_itunes_artworks/check_itunes_artworks-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = FL;
 			};
 			name = Release;
 		};
@@ -236,6 +242,7 @@
 				7B4453F3152DB93E00AD48A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
