@@ -40,8 +40,8 @@ int main(int argc, const char *argv[]) {
 		
 		for (iTunesTrack *ft in [[iTunes selection] get]) {
 			@autoreleasepool {
-				
-				if (![[ft className] isEqualToString:@"ITunesFileTrack"]) {
+				/* We cannot directly use the ITunesFileTrack class. If we do, we get a link error when compiling. */
+				if (![ft isKindOfClass:[NSClassFromString(@"ITunesFileTrack") class]]) {
 					NSLog(@"*** Warning: Skipping track %@ as it is not a file track", ft.name);
 					continue;
 				}
@@ -57,7 +57,6 @@ int main(int argc, const char *argv[]) {
 					if (curImage.size.width != curImage.size.height)
 						NSLog(@"*** Warning: Artwork %lu of track %@ is not a square", (unsigned long)i, trackDescrFrom(ft));
 				}
-				
 			}
 		}
 	}
