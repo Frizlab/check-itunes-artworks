@@ -40,6 +40,7 @@
 		7B98A59D15927712005D4D79 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		7B98A59E15927712005D4D79 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7B98A59F15927712005D4D79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7B98A5AE15927A11005D4D79 /* Readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 		7BDCED6A158ED65800BFFF7C /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,6 +60,7 @@
 		7B4453D7152DB93D00AD48A7 = {
 			isa = PBXGroup;
 			children = (
+				7B98A5AE15927A11005D4D79 /* Readme.txt */,
 				7B4453E8152DB93E00AD48A7 /* check_itunes_artworks */,
 				7B4453E5152DB93D00AD48A7 /* Frameworks */,
 				7B4453E3152DB93D00AD48A7 /* Products */,
