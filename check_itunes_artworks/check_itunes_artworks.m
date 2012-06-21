@@ -51,6 +51,9 @@ t_error check_selected_artworks(const t_prgm_options *options) {
 				if (artworks.count == 0)
 					[errorPrinter printErrorWithMessage:@"No artworks" track:ft];
 				
+				if (options->verbose)
+					[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Being treated. Has %d artwork(s)", artworks.count] track:ft];
+				
 				NSUInteger i = 0;
 				for (iTunesArtwork *curArtwork in artworks) {
 					++i;
