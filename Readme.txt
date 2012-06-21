@@ -1,2 +1,1 @@
-This project (still in an early alpha stage) allows checking ratio of artworks of selected iTunes tracks.
-The current version works, but the wanted aspect ratio must be specified directly in the code. By default it will check for a ratio of 1.
+This project allows checking ratio of artworks of selected iTunes tracks.
