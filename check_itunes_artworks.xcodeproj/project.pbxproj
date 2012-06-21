@@ -11,6 +11,8 @@
 		7B4453EA152DB93E00AD48A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4453E9152DB93E00AD48A7 /* main.m */; };
 		7B4453EE152DB93E00AD48A7 /* check_itunes_artworks.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B4453ED152DB93E00AD48A7 /* check_itunes_artworks.1 */; };
 		7B4453F8152DBFD400AD48A7 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4453F7152DBFD400AD48A7 /* ScriptingBridge.framework */; };
+		7B98A5B2159288BE005D4D79 /* check_itunes_artworks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B98A5AF15928827005D4D79 /* check_itunes_artworks.m */; };
+		7B98A5BE15928C31005D4D79 /* FLErrorPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B98A5BD15928C31005D4D79 /* FLErrorPrinter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +43,10 @@
 		7B98A59E15927712005D4D79 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		7B98A59F15927712005D4D79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7B98A5AE15927A11005D4D79 /* Readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		7B98A5AF15928827005D4D79 /* check_itunes_artworks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = check_itunes_artworks.m; sourceTree = "<group>"; };
+		7B98A5B115928841005D4D79 /* check_itunes_artworks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = check_itunes_artworks.h; sourceTree = "<group>"; };
+		7B98A5BC15928C31005D4D79 /* FLErrorPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLErrorPrinter.h; sourceTree = "<group>"; };
+		7B98A5BD15928C31005D4D79 /* FLErrorPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLErrorPrinter.m; sourceTree = "<group>"; };
 		7BDCED6A158ED65800BFFF7C /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +99,10 @@
 				7B98A58C15926858005D4D79 /* free_const_char.h */,
 				7BDCED6A158ED65800BFFF7C /* constants.h */,
 				7B4453E9152DB93E00AD48A7 /* main.m */,
+				7B98A5B115928841005D4D79 /* check_itunes_artworks.h */,
+				7B98A5AF15928827005D4D79 /* check_itunes_artworks.m */,
+				7B98A5BC15928C31005D4D79 /* FLErrorPrinter.h */,
+				7B98A5BD15928C31005D4D79 /* FLErrorPrinter.m */,
 				7B4453ED152DB93E00AD48A7 /* check_itunes_artworks.1 */,
 				7B4453EB152DB93E00AD48A7 /* Supporting Files */,
 			);
@@ -170,6 +180,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B4453EA152DB93E00AD48A7 /* main.m in Sources */,
+				7B98A5B2159288BE005D4D79 /* check_itunes_artworks.m in Sources */,
+				7B98A5BE15928C31005D4D79 /* FLErrorPrinter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,7 +193,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -208,7 +219,6 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
