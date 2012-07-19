@@ -59,6 +59,9 @@ t_error check_selected_artworks(const t_prgm_options *options) {
 					++i;
 					if (!options->check_all && i > 1) break;
 					
+					if (options->check_embed && curArtwork.downloaded)
+						[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Artwork %d is not embedded in track", i] track:ft];
+					
 					NSImage *curImage = [curArtwork data];
 					if (options->x_size > 0 && curImage.size.width != options->x_size)
 						[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"X Size of artwork %d is not correct (expected %lu, got %g)", i, options->x_size, curImage.size.width] track:ft];

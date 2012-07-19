@@ -29,6 +29,8 @@ typedef struct s_prgm_options {
 	NSUInteger y_size; /* Default, 0 (not checked) */
 	CGFloat ratio; /* Default: 1; if negative, means not checked */
 	
+	BOOL check_embed;          /* Default: NO */
+	
 	BOOL check_all;            /* Default: NO */
 	const char *output_format; /* Default: "\"%t — %a — %s\" does not fulfill the conditions" */
 	BOOL always_yes;           /* Default: YES */

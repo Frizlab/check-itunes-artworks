@@ -22,6 +22,7 @@ t_error usage(const char *progname, BOOL from_syntax_error) {
 	fprintf(out, "\nThis tool will check the artworks of the selected tracks in your iTunes library for certain conditions.\n");
 	fprintf(out, "\nOptions:\n");
 	fprintf(out, "\n   -h   --help\n   Display this help and exit.\n");
+	fprintf(out, "\n   -e   --check-embed\n   With this option, the artwork(s) must be embedded in the track to pass validation.\n");
 	fprintf(out, "\n   -x x_size   --x-size=x_size\n   Sets the expected width of the artworks. Must be greater than 0.\n");
 	fprintf(out, "\n   -y y_size   --y-size=y_size\n   Sets the expected height of the artworks. Must be greater than 0.\n");
 	fprintf(out, "\n   -r ratio   --ratio=ratio\n   Sets the expected ratio of the artworks. Default is 1. Three formats are valid:\n");
@@ -46,12 +47,13 @@ int main(int argc, char * const * argv) {
 	int getopt_long_ret;
 	t_error ret = ERR_NO_ERR;
 	BOOL parse_options_succeeded = YES;
-	t_prgm_options options = {NO, 0, 0, 1., NO, NULL, NO};
+	t_prgm_options options = {NO, 0, 0, 1., NO, NO, NULL, NO};
 	struct option long_options[] =
 	{
 		/* These options set a flag. */
-		{"verbose",   no_argument, &options.verbose,   YES},
-		{"check-all", no_argument, &options.check_all, YES},
+		{"verbose",     no_argument, &options.verbose,     YES},
+		{"check-all",   no_argument, &options.check_all,   YES},
+		{"check-embed", no_argument, &options.check_embed, YES},
 		/* These options don't set a flag.
 		 We distinguish them by their indices. */
 		{"help",   no_argument,       NULL, 'h'},
@@ -67,13 +69,13 @@ int main(int argc, char * const * argv) {
 		
 		/* getopt_long stores the option index here. */
 		int option_index = 0;
-		getopt_long_ret = getopt_long(argc, argv, "vathx:y:r:f:", long_options, &option_index);
+		getopt_long_ret = getopt_long(argc, argv, "vaethx:y:r:f:", long_options, &option_index);
 		
 		switch (getopt_long_ret) {
 			case -1: break; /* End of options */
 			case 0:
-				/* If this option set a flag, it is here the "verbose" or "check-all" options and
-				 * there is nothing else to do. */
+				/* If this option set a flag, it is here the "verbose", "check-embed" or "check-all"
+				 * options and there is nothing else to do. */
 				if (long_options[option_index].flag != NULL) break;
 				
 				/* All options that don't set a flag should return an indice
@@ -89,6 +91,9 @@ int main(int argc, char * const * argv) {
 				break;
 			case 'a':
 				options.check_all = YES;
+				break;
+			case 'e':
+				options.check_embed = YES;
 				break;
 			case 't':
 				options.always_yes = YES;
@@ -108,15 +113,21 @@ int main(int argc, char * const * argv) {
 				}
 				break;
 			case 'r':
+				if (!strcmp(optarg, "none")) {
+					options.ratio = -1;
+					break;
+				}
+				
 				options.ratio = (CGFloat)strtod(optarg, &number_parse_check);
 				if (*number_parse_check == '/') {
 					double y = (CGFloat)strtod(number_parse_check + 1, &number_parse_check);
 					options.ratio /= y;
 				}
-				if (*number_parse_check != '\0') {
+				if (*number_parse_check != '\0' || options.ratio < 0) {
 					fprintf(stderr, "%s: bad argument for the \"ratio\" option.\n", argv[0]);
 					parse_options_succeeded = NO;
 				}
+				
 				break;
 			case 'f': {
 				char *format_copy = malloc(sizeof(char)*(strlen(optarg) + 1));
@@ -157,8 +168,9 @@ int main(int argc, char * const * argv) {
 		if (options.ratio >= 0.) fprintf(stderr, "%g\n", options.ratio);
 		else                     fprintf(stderr, "not checked\n");
 		fprintf(stderr, "   output format: \"%s\"\n", options.output_format);
-		fprintf(stderr, "   \"check all artworks\" is %s\n", options.check_all? "true": "false");
-		fprintf(stderr, "   \"yes to all\"         is %s\n", options.always_yes? "true": "false");
+		fprintf(stderr, "   \"check if artworks are embedded\" is %s\n", options.check_embed? "true": "false");
+		fprintf(stderr, "   \"check all artworks\"             is %s\n", options.check_all? "true": "false");
+		fprintf(stderr, "   \"yes to all\"                     is %s\n", options.always_yes? "true": "false");
 		fprintf(stderr, "\n");
 	}
 	
