@@ -42,8 +42,8 @@ t_error check_selected_artworks(const t_prgm_options *options) {
 		for (iTunesTrack *ft in [[iTunes selection] get]) {
 			@autoreleasepool {
 				/* We cannot directly use the ITunesFileTrack class. If we do, we get a link error when compiling. */
-				if (![ft isKindOfClass:[NSClassFromString(@"ITunesFileTrack") class]]) {
-					[errorPrinter printErrorWithMessage:@"Not a File Track" track:ft];
+				if (![ft isKindOfClass:[NSClassFromString(@"ITunesFileTrack") class]] && ![ft isKindOfClass:[NSClassFromString(@"ITunesSharedTrack") class]]) {
+					[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Not a File or Shared Track (Got an %@)", NSStringFromClass([ft class])] track:ft];
 					continue;
 				}
 				
