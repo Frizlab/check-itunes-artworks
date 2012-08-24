@@ -42,8 +42,8 @@ t_error check_selected_artworks(const t_prgm_options *options) {
 		for (iTunesTrack *ft in [[iTunes selection] get]) {
 			@autoreleasepool {
 				/* We cannot directly use the ITunesFileTrack class. If we do, we get a link error when compiling. */
-				if (![ft isKindOfClass:[NSClassFromString(@"ITunesFileTrack") class]]) {
-					[errorPrinter printErrorWithMessage:@"Not a File Track" track:ft];
+				if (![ft isKindOfClass:[NSClassFromString(@"ITunesFileTrack") class]] && ![ft isKindOfClass:[NSClassFromString(@"ITunesSharedTrack") class]]) {
+					[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Not a File or Shared Track (Got an %@)", NSStringFromClass([ft class])] track:ft];
 					continue;
 				}
 				
@@ -52,7 +52,7 @@ t_error check_selected_artworks(const t_prgm_options *options) {
 					[errorPrinter printErrorWithMessage:@"No artworks" track:ft];
 				
 				if (options->verbose)
-					[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Being treated. Has %d artwork(s)", artworks.count] track:ft];
+					[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Being treated. Has %lu artwork(s)", (unsigned long)artworks.count] track:ft];
 				
 				NSUInteger i = 0;
 				for (iTunesArtwork *curArtwork in artworks) {
@@ -60,15 +60,15 @@ t_error check_selected_artworks(const t_prgm_options *options) {
 					if (!options->check_all && i > 1) break;
 					
 					if (options->check_embed && curArtwork.downloaded)
-						[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Artwork %d is not embedded in track", i] track:ft];
+						[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Artwork %lu is not embedded in track", (unsigned long)i] track:ft];
 					
 					NSImage *curImage = [curArtwork data];
 					if (options->x_size > 0 && curImage.size.width != options->x_size)
-						[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"X Size of artwork %d is not correct (expected %lu, got %g)", i, options->x_size, curImage.size.width] track:ft];
+						[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"X Size of artwork %lu is not correct (expected %lu, got %g)", (unsigned long)i, options->x_size, curImage.size.width] track:ft];
 					if (options->y_size > 0 && curImage.size.height != options->y_size)
-						[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Y Size of artwork %d is not correct (expected %lu, got %g)", i, options->y_size, curImage.size.height] track:ft];
+						[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Y Size of artwork %lu is not correct (expected %lu, got %g)", (unsigned long)i, options->y_size, curImage.size.height] track:ft];
 					if (options->ratio >= 0 && !has_correct_ratio(curImage.size.width, curImage.size.height, options->ratio))
-						[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Ratio of artwork %d is not correct (expected %g, got %g)", i, options->ratio, curImage.size.width / curImage.size.height] track:ft];
+						[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Ratio of artwork %lu is not correct (expected %g, got %g)", (unsigned long)i, options->ratio, curImage.size.width / curImage.size.height] track:ft];
 				}
 			}
 		}
