@@ -32,7 +32,7 @@ t_error check_selected_artworks(const t_prgm_options *options) {
 	@autoreleasepool {
 		iTunesApplication *iTunes = [SBApplication applicationWithBundleIdentifier:@"com.apple.iTunes"];
 		if (![iTunes isRunning]) {
-			fprintf(stderr, "***** Error: iTunes must be running for the script to work");
+			fprintf(stderr, "***** Error: iTunes must be running to check artworks\n");
 			return ERR_ITUNES_NOT_LAUNCHED;
 		}
 		
