@@ -11,6 +11,7 @@
 		7B4453EA152DB93E00AD48A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4453E9152DB93E00AD48A7 /* main.m */; };
 		7B4453EE152DB93E00AD48A7 /* check_itunes_artworks.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B4453ED152DB93E00AD48A7 /* check_itunes_artworks.1 */; };
 		7B4453F8152DBFD400AD48A7 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4453F7152DBFD400AD48A7 /* ScriptingBridge.framework */; };
+		7B95697D15F4BC080025F452 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B95697C15F4BC080025F452 /* Cocoa.framework */; };
 		7B98A5B2159288BE005D4D79 /* check_itunes_artworks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B98A5AF15928827005D4D79 /* check_itunes_artworks.m */; };
 		7B98A5BE15928C31005D4D79 /* FLErrorPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B98A5BD15928C31005D4D79 /* FLErrorPrinter.m */; };
 /* End PBXBuildFile section */
@@ -36,12 +37,9 @@
 		7B4453ED152DB93E00AD48A7 /* check_itunes_artworks.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = check_itunes_artworks.1; sourceTree = "<group>"; };
 		7B4453F7152DBFD400AD48A7 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		7B4453F9152DC06200AD48A7 /* iTunes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iTunes.h; sourceTree = "<group>"; };
+		7B95697C15F4BC080025F452 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		7B98A58C15926858005D4D79 /* free_const_char.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = free_const_char.h; sourceTree = "<group>"; };
 		7B98A59815927712005D4D79 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		7B98A59A15927712005D4D79 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
-		7B98A59D15927712005D4D79 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		7B98A59E15927712005D4D79 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		7B98A59F15927712005D4D79 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7B98A5AE15927A11005D4D79 /* Readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 		7B98A5AF15928827005D4D79 /* check_itunes_artworks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = check_itunes_artworks.m; sourceTree = "<group>"; };
 		7B98A5B115928841005D4D79 /* check_itunes_artworks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = check_itunes_artworks.h; sourceTree = "<group>"; };
@@ -55,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B95697D15F4BC080025F452 /* Cocoa.framework in Frameworks */,
 				7B4453E7152DB93D00AD48A7 /* Foundation.framework in Frameworks */,
 				7B4453F8152DBFD400AD48A7 /* ScriptingBridge.framework in Frameworks */,
 			);
@@ -84,11 +83,10 @@
 		7B4453E5152DB93D00AD48A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7B4453F7152DBFD400AD48A7 /* ScriptingBridge.framework */,
 				7B4453E6152DB93D00AD48A7 /* Foundation.framework */,
+				7B95697C15F4BC080025F452 /* Cocoa.framework */,
+				7B4453F7152DBFD400AD48A7 /* ScriptingBridge.framework */,
 				7B98A59815927712005D4D79 /* SenTestingKit.framework */,
-				7B98A59A15927712005D4D79 /* Cocoa.framework */,
-				7B98A59C15927712005D4D79 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,16 +114,6 @@
 				7B4453EC152DB93E00AD48A7 /* check_itunes_artworks-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		7B98A59C15927712005D4D79 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7B98A59D15927712005D4D79 /* AppKit.framework */,
-				7B98A59E15927712005D4D79 /* CoreData.framework */,
-				7B98A59F15927712005D4D79 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

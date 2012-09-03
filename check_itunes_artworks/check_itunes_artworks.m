@@ -59,16 +59,38 @@ t_error check_selected_artworks(const t_prgm_options *options) {
 					++i;
 					if (!options->check_all && i > 1) break;
 					
-					if (options->check_embed && curArtwork.downloaded)
-						[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Artwork %lu is not embedded in track", (unsigned long)i] track:ft];
-					
-					NSImage *curImage = [curArtwork data];
-					if (options->x_size > 0 && curImage.size.width != options->x_size)
-						[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"X Size of artwork %lu is not correct (expected %lu, got %g)", (unsigned long)i, options->x_size, curImage.size.width] track:ft];
-					if (options->y_size > 0 && curImage.size.height != options->y_size)
-						[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Y Size of artwork %lu is not correct (expected %lu, got %g)", (unsigned long)i, options->y_size, curImage.size.height] track:ft];
-					if (options->ratio >= 0 && !has_correct_ratio(curImage.size.width, curImage.size.height, options->ratio))
-						[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Ratio of artwork %lu is not correct (expected %g, got %g)", (unsigned long)i, options->ratio, curImage.size.width / curImage.size.height] track:ft];
+					@autoreleasepool {
+						if (options->check_embed && curArtwork.downloaded)
+							[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Artwork %lu is not embedded in track", (unsigned long)i] track:ft];
+						
+						if (options->x_size > 0 || options->y_size > 0 || options->ratio >= 0) {
+							NSImage *curImage = nil;
+							id obj = [curArtwork data];
+							if ([obj isKindOfClass:[NSAppleEventDescriptor class]]) {
+								/* A weird thing this NSAppleEventDescriptor. It seems to be a bug in the
+								 * 64-bits version of iTunes: the data method of iTunesArtwork returns an
+								 * NSAppleEventDescriptor instead of an NSImage. I did not found a proper
+								 * way to use this NSAppleEventDescriptor, so instead, I create a new
+								 * NSImage from the rawData of the artwork. */
+								curImage = [[NSImage alloc] initWithData:[curArtwork rawData]];
+								[curImage autorelease];
+								if (curImage == nil) {
+									[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Cannot create an NSImage from the rawData of the current artwork"] track:ft];
+									break;
+								}
+							} else if ([obj isKindOfClass:[NSImage class]]) {
+								curImage = obj;
+							} else {
+								[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Unkown class for artwork data (expected NSImage or NSAppleEventDescriptor, got %@)", NSStringFromClass([obj class])] track:ft];
+							}
+							if (options->x_size > 0 && curImage.size.width != options->x_size)
+								[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"X Size of artwork %lu is not correct (expected %lu, got %g)", (unsigned long)i, options->x_size, curImage.size.width] track:ft];
+							if (options->y_size > 0 && curImage.size.height != options->y_size)
+								[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Y Size of artwork %lu is not correct (expected %lu, got %g)", (unsigned long)i, options->y_size, curImage.size.height] track:ft];
+							if (options->ratio >= 0 && !has_correct_ratio(curImage.size.width, curImage.size.height, options->ratio))
+								[errorPrinter printErrorWithMessage:[NSString stringWithFormat:@"Ratio of artwork %lu is not correct (expected %g, got %g)", (unsigned long)i, options->ratio, curImage.size.width / curImage.size.height] track:ft];
+						}
+					}
 				}
 			}
 		}
