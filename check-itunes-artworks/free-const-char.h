@@ -1,6 +1,6 @@
 /*
  *  free_const_char.h
- *  check_itunes_artworks
+ *  check-itunes-artworks
  *
  *  Created by François LAMBOLEY on 6/20/12.
  *  Copyright 2011 Frost Land. All rights reserved.

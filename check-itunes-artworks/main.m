@@ -1,6 +1,6 @@
 /*
  * main.m
- * check_itunes_artworks
+ * check-itunes-artworks
  *
  * Created by François LAMBOLEY on 4/5/12.
  * Copyright (c) 2012 Frost Land. All rights reserved.
@@ -11,8 +11,8 @@
 #include <assert.h>
 
 #include "constants.h"
-#include "free_const_char.h"
-#include "check_itunes_artworks.h"
+#include "free-const-char.h"
+#include "check-itunes-artworks.h"
 
 t_error usage(const char *progname, BOOL from_syntax_error) {
 	FILE *out = stdout;

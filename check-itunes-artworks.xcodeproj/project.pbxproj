@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		7B4453E7152DB93D00AD48A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4453E6152DB93D00AD48A7 /* Foundation.framework */; };
 		7B4453EA152DB93E00AD48A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B4453E9152DB93E00AD48A7 /* main.m */; };
-		7B4453EE152DB93E00AD48A7 /* check_itunes_artworks.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B4453ED152DB93E00AD48A7 /* check_itunes_artworks.1 */; };
+		7B4453EE152DB93E00AD48A7 /* check-itunes-artworks.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7B4453ED152DB93E00AD48A7 /* check-itunes-artworks.1 */; };
 		7B4453F8152DBFD400AD48A7 /* ScriptingBridge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4453F7152DBFD400AD48A7 /* ScriptingBridge.framework */; };
 		7B95697D15F4BC080025F452 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B95697C15F4BC080025F452 /* Cocoa.framework */; };
-		7B98A5B2159288BE005D4D79 /* check_itunes_artworks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B98A5AF15928827005D4D79 /* check_itunes_artworks.m */; };
+		7B98A5B2159288BE005D4D79 /* check-itunes-artworks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B98A5AF15928827005D4D79 /* check-itunes-artworks.m */; };
 		7B98A5BE15928C31005D4D79 /* FLErrorPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B98A5BD15928C31005D4D79 /* FLErrorPrinter.m */; };
 /* End PBXBuildFile section */
 
@@ -23,26 +23,26 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				7B4453EE152DB93E00AD48A7 /* check_itunes_artworks.1 in CopyFiles */,
+				7B4453EE152DB93E00AD48A7 /* check-itunes-artworks.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7B4453E2152DB93D00AD48A7 /* check_itunes_artworks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = check_itunes_artworks; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4453E2152DB93D00AD48A7 /* check-itunes-artworks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "check-itunes-artworks"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4453E6152DB93D00AD48A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7B4453E9152DB93E00AD48A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		7B4453EC152DB93E00AD48A7 /* check_itunes_artworks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "check_itunes_artworks-Prefix.pch"; sourceTree = "<group>"; };
-		7B4453ED152DB93E00AD48A7 /* check_itunes_artworks.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = check_itunes_artworks.1; sourceTree = "<group>"; };
+		7B4453EC152DB93E00AD48A7 /* check-itunes-artworks-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "check-itunes-artworks-Prefix.pch"; sourceTree = "<group>"; };
+		7B4453ED152DB93E00AD48A7 /* check-itunes-artworks.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = "check-itunes-artworks.1"; sourceTree = "<group>"; };
 		7B4453F7152DBFD400AD48A7 /* ScriptingBridge.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScriptingBridge.framework; path = System/Library/Frameworks/ScriptingBridge.framework; sourceTree = SDKROOT; };
 		7B4453F9152DC06200AD48A7 /* iTunes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iTunes.h; sourceTree = "<group>"; };
 		7B95697C15F4BC080025F452 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		7B98A58C15926858005D4D79 /* free_const_char.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = free_const_char.h; sourceTree = "<group>"; };
+		7B98A58C15926858005D4D79 /* free-const-char.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "free-const-char.h"; sourceTree = "<group>"; };
 		7B98A59815927712005D4D79 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		7B98A5AE15927A11005D4D79 /* Readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
-		7B98A5AF15928827005D4D79 /* check_itunes_artworks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = check_itunes_artworks.m; sourceTree = "<group>"; };
-		7B98A5B115928841005D4D79 /* check_itunes_artworks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = check_itunes_artworks.h; sourceTree = "<group>"; };
+		7B98A5AF15928827005D4D79 /* check-itunes-artworks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "check-itunes-artworks.m"; sourceTree = "<group>"; };
+		7B98A5B115928841005D4D79 /* check-itunes-artworks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "check-itunes-artworks.h"; sourceTree = "<group>"; };
 		7B98A5BC15928C31005D4D79 /* FLErrorPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLErrorPrinter.h; sourceTree = "<group>"; };
 		7B98A5BD15928C31005D4D79 /* FLErrorPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLErrorPrinter.m; sourceTree = "<group>"; };
 		7BDCED6A158ED65800BFFF7C /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				7B98A5AE15927A11005D4D79 /* Readme.txt */,
-				7B4453E8152DB93E00AD48A7 /* check_itunes_artworks */,
+				7B4453E8152DB93E00AD48A7 /* check-itunes-artworks */,
 				7B4453E5152DB93D00AD48A7 /* Frameworks */,
 				7B4453E3152DB93D00AD48A7 /* Products */,
 			);
@@ -75,7 +75,7 @@
 		7B4453E3152DB93D00AD48A7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B4453E2152DB93D00AD48A7 /* check_itunes_artworks */,
+				7B4453E2152DB93D00AD48A7 /* check-itunes-artworks */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,27 +91,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7B4453E8152DB93E00AD48A7 /* check_itunes_artworks */ = {
+		7B4453E8152DB93E00AD48A7 /* check-itunes-artworks */ = {
 			isa = PBXGroup;
 			children = (
-				7B98A58C15926858005D4D79 /* free_const_char.h */,
+				7B98A58C15926858005D4D79 /* free-const-char.h */,
 				7BDCED6A158ED65800BFFF7C /* constants.h */,
 				7B4453E9152DB93E00AD48A7 /* main.m */,
-				7B98A5B115928841005D4D79 /* check_itunes_artworks.h */,
-				7B98A5AF15928827005D4D79 /* check_itunes_artworks.m */,
+				7B98A5B115928841005D4D79 /* check-itunes-artworks.h */,
+				7B98A5AF15928827005D4D79 /* check-itunes-artworks.m */,
 				7B98A5BC15928C31005D4D79 /* FLErrorPrinter.h */,
 				7B98A5BD15928C31005D4D79 /* FLErrorPrinter.m */,
-				7B4453ED152DB93E00AD48A7 /* check_itunes_artworks.1 */,
+				7B4453ED152DB93E00AD48A7 /* check-itunes-artworks.1 */,
 				7B4453EB152DB93E00AD48A7 /* Supporting Files */,
 			);
-			path = check_itunes_artworks;
+			path = "check-itunes-artworks";
 			sourceTree = "<group>";
 		};
 		7B4453EB152DB93E00AD48A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				7B4453F9152DC06200AD48A7 /* iTunes.h */,
-				7B4453EC152DB93E00AD48A7 /* check_itunes_artworks-Prefix.pch */,
+				7B4453EC152DB93E00AD48A7 /* check-itunes-artworks-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -119,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B4453E1152DB93D00AD48A7 /* check_itunes_artworks */ = {
+		7B4453E1152DB93D00AD48A7 /* check-itunes-artworks */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B4453F1152DB93E00AD48A7 /* Build configuration list for PBXNativeTarget "check_itunes_artworks" */;
+			buildConfigurationList = 7B4453F1152DB93E00AD48A7 /* Build configuration list for PBXNativeTarget "check-itunes-artworks" */;
 			buildPhases = (
 				7B4453DE152DB93D00AD48A7 /* Sources */,
 				7B4453DF152DB93D00AD48A7 /* Frameworks */,
@@ -131,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = check_itunes_artworks;
+			name = "check-itunes-artworks";
 			productName = check_itunes_artworks;
-			productReference = 7B4453E2152DB93D00AD48A7 /* check_itunes_artworks */;
+			productReference = 7B4453E2152DB93D00AD48A7 /* check-itunes-artworks */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -142,22 +142,23 @@
 		7B4453D9152DB93D00AD48A7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 1220;
 				ORGANIZATIONNAME = "Frost Land";
 			};
-			buildConfigurationList = 7B4453DC152DB93D00AD48A7 /* Build configuration list for PBXProject "check_itunes_artworks" */;
+			buildConfigurationList = 7B4453DC152DB93D00AD48A7 /* Build configuration list for PBXProject "check-itunes-artworks" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 7B4453D7152DB93D00AD48A7;
 			productRefGroup = 7B4453E3152DB93D00AD48A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B4453E1152DB93D00AD48A7 /* check_itunes_artworks */,
+				7B4453E1152DB93D00AD48A7 /* check-itunes-artworks */,
 			);
 		};
 /* End PBXProject section */
@@ -168,7 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B4453EA152DB93E00AD48A7 /* main.m in Sources */,
-				7B98A5B2159288BE005D4D79 /* check_itunes_artworks.m in Sources */,
+				7B98A5B2159288BE005D4D79 /* check-itunes-artworks.m in Sources */,
 				7B98A5BE15928C31005D4D79 /* FLErrorPrinter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,11 +181,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -194,9 +216,11 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
@@ -206,17 +230,39 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -224,9 +270,11 @@
 		7B4453F2152DB93E00AD48A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CURRENT_PROJECT_VERSION = 8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "check_itunes_artworks/check_itunes_artworks-Prefix.pch";
+				GCC_PREFIX_HEADER = "check-itunes-artworks/check-itunes-artworks-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = FL;
@@ -236,9 +284,11 @@
 		7B4453F3152DB93E00AD48A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "-";
 				CURRENT_PROJECT_VERSION = 8;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "check_itunes_artworks/check_itunes_artworks-Prefix.pch";
+				GCC_PREFIX_HEADER = "check-itunes-artworks/check-itunes-artworks-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = FL;
@@ -248,7 +298,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B4453DC152DB93D00AD48A7 /* Build configuration list for PBXProject "check_itunes_artworks" */ = {
+		7B4453DC152DB93D00AD48A7 /* Build configuration list for PBXProject "check-itunes-artworks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B4453EF152DB93E00AD48A7 /* Debug */,
@@ -257,7 +307,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B4453F1152DB93E00AD48A7 /* Build configuration list for PBXNativeTarget "check_itunes_artworks" */ = {
+		7B4453F1152DB93E00AD48A7 /* Build configuration list for PBXNativeTarget "check-itunes-artworks" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B4453F2152DB93E00AD48A7 /* Debug */,

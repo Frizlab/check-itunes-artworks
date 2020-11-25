@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:check_itunes_artworks.xcodeproj">
+      location = "self:check-itunes-artworks.xcodeproj">
    </FileRef>
 </Workspace>

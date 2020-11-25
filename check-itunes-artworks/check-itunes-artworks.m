@@ -1,6 +1,6 @@
 /*
- * check_itunes_artworks.m
- * check_itunes_artworks
+ * check-itunes-artworks.m
+ * check-itunes-artworks
  *
  * Created by François LAMBOLEY on 6/21/12.
  * Copyright (c) 2012 Frost Land. All rights reserved.
@@ -10,7 +10,7 @@
 
 #import "iTunes.h"
 #import "FLErrorPrinter.h"
-#import "check_itunes_artworks.h"
+#import "check-itunes-artworks.h"
 
 void OSStatusToCharStar(OSStatus status, char str[5]) {
 	if (status == noErr) {
